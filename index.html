@@ -75,10 +75,52 @@ select {
 
 .container {
     max-width: 1220px;
-
     margin: 0 auto;
-
     padding: 24px;
+}
+
+
+/* =========================================
+   BLAD 1-5
+========================================= */
+
+.sheet-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 18px;
+    padding: 6px;
+    background: rgba(220,227,238,0.9);
+    border-radius: 15px;
+    width: fit-content;
+    box-shadow:
+        0 4px 15px
+        rgba(20,50,117,0.06);
+}
+
+.sheet-tab {
+    min-width: 48px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 850;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .18s ease;
+}
+
+.sheet-tab:hover {
+    color: var(--blue);
+    background: rgba(255,255,255,.55);
+}
+
+.sheet-tab.active {
+    background: white;
+    color: var(--blue);
+    box-shadow:
+        0 4px 12px
+        rgba(0,0,0,0.09);
 }
 
 
@@ -88,64 +130,34 @@ select {
 
 .topbar {
     display: flex;
-
     align-items: center;
     justify-content: space-between;
-
     gap: 18px;
-
     margin-bottom: 20px;
-
     padding: 18px 20px;
-
-    background:
-        rgba(255,255,255,0.88);
-
-    backdrop-filter:
-        blur(12px);
-
-    border:
-        1px solid rgba(255,255,255,0.9);
-
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.9);
     border-radius: 20px;
-
-    box-shadow:
-        var(--shadow-large);
+    box-shadow: var(--shadow-large);
 }
 
 .customer-name {
     width: 360px;
-
     max-width: 100%;
-
     border: none;
-
     outline: none;
-
-    background:
-        transparent;
-
-    color:
-        var(--blue);
-
+    background: transparent;
+    color: var(--blue);
     font-size: 34px;
-
     font-weight: 850;
-
-    letter-spacing:
-        -1px;
+    letter-spacing: -1px;
 }
 
 .customer-name:focus {
-    background:
-        white;
-
-    border-radius:
-        12px;
-
-    padding:
-        7px 12px;
-
+    background: white;
+    border-radius: 12px;
+    padding: 7px 12px;
     box-shadow:
         0 5px 18px
         rgba(20,50,117,0.10);
@@ -153,28 +165,18 @@ select {
 
 .top-actions {
     display: flex;
-
     gap: 8px;
-
     flex-wrap: wrap;
-
     justify-content: flex-end;
 }
 
 .btn {
     border: none;
-
     border-radius: 11px;
-
-    padding:
-        11px 15px;
-
+    padding: 11px 15px;
     font-size: 13px;
-
     font-weight: 750;
-
     cursor: pointer;
-
     transition:
         transform .15s ease,
         box-shadow .15s ease,
@@ -182,34 +184,10 @@ select {
 }
 
 .btn:hover {
-    transform:
-        translateY(-2px);
-
+    transform: translateY(-2px);
     box-shadow:
         0 7px 18px
         rgba(0,0,0,0.12);
-}
-
-.btn-blue {
-    background:
-        linear-gradient(
-            135deg,
-            #1b4395,
-            #143275
-        );
-
-    color: white;
-}
-
-.btn-green {
-    background:
-        linear-gradient(
-            135deg,
-            #1c9a4b,
-            #16803c
-        );
-
-    color: white;
 }
 
 .btn-orange {
@@ -219,42 +197,22 @@ select {
             #f2994a,
             #e67e22
         );
-
     color: white;
-}
-
-.btn-light {
-    background:
-        white;
-
-    color:
-        var(--blue);
-
-    border:
-        1px solid var(--border);
 }
 
 
 /* =========================================
-   FLIKAR
+   FLIKAR DAGBOK / RECEPT
 ========================================= */
 
 .tabs {
     display: flex;
-
     gap: 5px;
-
-    background:
-        rgba(220,227,238,0.9);
-
+    background: rgba(220,227,238,0.9);
     padding: 5px;
-
     border-radius: 14px;
-
     width: fit-content;
-
     margin-bottom: 18px;
-
     box-shadow:
         0 4px 15px
         rgba(20,50,117,0.05);
@@ -262,41 +220,22 @@ select {
 
 .tab-button {
     border: none;
-
-    background:
-        transparent;
-
-    color:
-        var(--muted);
-
-    padding:
-        10px 23px;
-
-    border-radius:
-        10px;
-
-    font-weight:
-        750;
-
-    cursor:
-        pointer;
-
-    transition:
-        .18s ease;
+    background: transparent;
+    color: var(--muted);
+    padding: 10px 23px;
+    border-radius: 10px;
+    font-weight: 750;
+    cursor: pointer;
+    transition: .18s ease;
 }
 
 .tab-button:hover {
-    color:
-        var(--blue);
+    color: var(--blue);
 }
 
 .tab-button.active {
-    background:
-        white;
-
-    color:
-        var(--blue);
-
+    background: white;
+    color: var(--blue);
     box-shadow:
         0 4px 12px
         rgba(0,0,0,0.09);
@@ -308,51 +247,24 @@ select {
 ========================================= */
 
 .month-totals {
-    display:
-        grid;
-
+    display: grid;
     grid-template-columns:
         repeat(3, minmax(180px, 1fr));
-
-    gap:
-        14px;
-
-    margin-bottom:
-        18px;
+    gap: 14px;
+    margin-bottom: 18px;
 }
 
 .month-total-box {
-    position:
-        relative;
-
-    overflow:
-        hidden;
-
-    background:
-        rgba(255,255,255,0.94);
-
-    border:
-        1px solid
-        rgba(255,255,255,0.95);
-
-    border-radius:
-        17px;
-
-    padding:
-        16px 18px;
-
-    box-shadow:
-        var(--shadow);
-
-    text-align:
-        center;
-
-    font-size:
-        12px;
-
-    font-weight:
-        800;
-
+    position: relative;
+    overflow: hidden;
+    background: rgba(255,255,255,0.94);
+    border: 1px solid rgba(255,255,255,0.95);
+    border-radius: 17px;
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
     transition:
         transform .18s ease,
         box-shadow .18s ease;
@@ -360,46 +272,28 @@ select {
 
 .month-total-box::before {
     content: "";
-
-    position:
-        absolute;
-
+    position: absolute;
     left: 0;
     top: 0;
-
     width: 100%;
-
     height: 4px;
-
-    background:
-        var(--blue);
+    background: var(--blue);
 }
 
 .month-total-box:hover {
-    transform:
-        translateY(-2px);
-
-    box-shadow:
-        var(--shadow-large);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-large);
 }
 
 .month-total-box span {
-    display:
-        block;
-
-    margin-top:
-        5px;
-
-    font-size:
-        25px;
-
-    font-weight:
-        850;
+    display: block;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 850;
 }
 
 .month-total-cost {
-    color:
-        var(--blue);
+    color: var(--blue);
 }
 
 .month-total-cost::before {
@@ -412,8 +306,7 @@ select {
 }
 
 .month-total-corr {
-    color:
-        var(--green);
+    color: var(--green);
 }
 
 .month-total-corr::before {
@@ -426,8 +319,7 @@ select {
 }
 
 .month-total-retur {
-    color:
-        var(--orange);
+    color: var(--orange);
 }
 
 .month-total-retur::before {
@@ -440,30 +332,19 @@ select {
 }
 
 .month-total-corr.positive {
-    color:
-        var(--red);
+    color: var(--red);
 }
 
 .month-total-corr.negative {
-    color:
-        var(--green);
+    color: var(--green);
 }
 
 .cost-small {
-    display:
-        block;
-
-    margin-top:
-        4px;
-
-    font-size:
-        11px;
-
-    font-weight:
-        750;
-
-    opacity:
-        .78;
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    font-weight: 750;
+    opacity: .78;
 }
 
 
@@ -472,79 +353,43 @@ select {
 ========================================= */
 
 .calendar-navigation {
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    gap:
-        18px;
-
-    margin-bottom:
-        13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 13px;
 }
 
 .nav-button {
-    border:
-        none;
-
+    border: none;
     background:
         linear-gradient(
             135deg,
             #1b4395,
             #143275
         );
-
-    color:
-        white;
-
-    border-radius:
-        10px;
-
-    padding:
-        9px 15px;
-
-    cursor:
-        pointer;
-
-    font-size:
-        12px;
-
-    font-weight:
-        750;
-
-    transition:
-        .15s ease;
+    color: white;
+    border-radius: 10px;
+    padding: 9px 15px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 750;
+    transition: .15s ease;
 }
 
 .nav-button:hover {
-    transform:
-        translateY(-1px);
-
+    transform: translateY(-1px);
     box-shadow:
         0 5px 14px
         rgba(20,50,117,.2);
 }
 
 .month-title {
-    min-width:
-        200px;
-
-    text-align:
-        center;
-
-    color:
-        var(--blue);
-
-    font-size:
-        22px;
-
-    font-weight:
-        850;
+    min-width: 200px;
+    text-align: center;
+    color: var(--blue);
+    font-size: 22px;
+    font-weight: 850;
 }
 
 
@@ -553,120 +398,65 @@ select {
 ========================================= */
 
 .calendar {
-    width:
-        90%;
-
-    max-width:
-        900px;
-
-    margin:
-        0 auto 20px;
-
-    background:
-        white;
-
-    border-radius:
-        17px;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        var(--shadow-large);
-
-    border:
-        1px solid
-        var(--border);
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    background: white;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: var(--shadow-large);
+    border: 1px solid var(--border);
 }
 
 .weekdays {
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(7,1fr);
-
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
     background:
         linear-gradient(
             135deg,
             #193b86,
             #143275
         );
-
-    color:
-        white;
+    color: white;
 }
 
 .weekdays div {
-    padding:
-        10px 4px;
-
-    text-align:
-        center;
-
-    font-size:
-        11px;
-
-    font-weight:
-        850;
+    padding: 10px 4px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 850;
 }
 
 .calendar-grid {
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(7,1fr);
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
 }
 
 .calendar-day {
-    min-height:
-        75px;
-
-    border-right:
-        1px solid
-        var(--border);
-
-    border-bottom:
-        1px solid
-        var(--border);
-
-    padding:
-        7px;
-
-    cursor:
-        pointer;
-
-    position:
-        relative;
-
-    background:
-        white;
-
+    min-height: 75px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 7px;
+    cursor: pointer;
+    position: relative;
+    background: white;
     transition:
         background .15s ease,
         transform .15s ease;
 }
 
 .calendar-day:hover {
-    background:
-        var(--blue-light);
+    background: var(--blue-light);
 }
 
 .calendar-day.weekend {
-    background:
-        #fff7f5;
-
-    color:
-        #967c77;
+    background: #fff7f5;
+    color: #967c77;
 }
 
 .calendar-day.outside {
-    background:
-        #f3f5f7;
-
-    color:
-        #b5bbc4;
+    background: #f3f5f7;
+    color: #b5bbc4;
 }
 
 .calendar-day.today {
@@ -682,53 +472,38 @@ select {
             #1c438d,
             #143275
         );
-
-    color:
-        white;
+    color: white;
 }
 
 .calendar-day.selected:hover {
-    background:
-        #1c438d;
+    background: #1c438d;
 }
 
 .day-number {
-    font-size:
-        14px;
-
-    font-weight:
-        850;
+    font-size: 14px;
+    font-weight: 850;
 }
 
 .day-status {
-    margin-top:
-        4px;
-
-    font-size:
-        9px;
-
-    font-weight:
-        850;
+    margin-top: 4px;
+    font-size: 9px;
+    font-weight: 850;
 }
 
 .day-corr {
-    color:
-        var(--green);
+    color: var(--green);
 }
 
 .day-retur {
-    color:
-        var(--orange);
+    color: var(--orange);
 }
 
 .selected .day-corr {
-    color:
-        #8ff0ad;
+    color: #8ff0ad;
 }
 
 .selected .day-retur {
-    color:
-        #ffd08c;
+    color: #ffd08c;
 }
 
 
@@ -737,20 +512,11 @@ select {
 ========================================= */
 
 .date {
-    text-align:
-        center;
-
-    color:
-        var(--blue);
-
-    font-size:
-        18px;
-
-    font-weight:
-        850;
-
-    margin:
-        15px 0;
+    text-align: center;
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: 850;
+    margin: 15px 0;
 }
 
 
@@ -759,33 +525,21 @@ select {
 ========================================= */
 
 .table-wrapper {
-    overflow-x:
-        auto;
-
-    border-radius:
-        17px;
-
-    box-shadow:
-        var(--shadow-large);
+    overflow-x: auto;
+    border-radius: 17px;
+    box-shadow: var(--shadow-large);
 }
 
 .table {
-    min-width:
-        850px;
-
-    background:
-        white;
-
-    overflow:
-        hidden;
+    min-width: 850px;
+    background: white;
+    overflow: hidden;
 }
 
 .header,
 .row,
 .total-row {
-    display:
-        grid;
-
+    display: grid;
     grid-template-columns:
         0.85fr
         1fr
@@ -802,144 +556,80 @@ select {
             #193b86,
             #143275
         );
-
-    color:
-        white;
-
-    font-weight:
-        850;
+    color: white;
+    font-weight: 850;
 }
 
 .header div {
-    padding:
-        13px 7px;
-
-    text-align:
-        center;
-
-    color:
-        white;
-
-    font-size:
-        13px;
+    padding: 13px 7px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
 }
 
 .row {
-    border-bottom:
-        1px solid
-        var(--border);
-
-    background:
-        white;
-
-    transition:
-        background .15s ease;
+    border-bottom: 1px solid var(--border);
+    background: white;
+    transition: background .15s ease;
 }
 
 .row:hover {
-    background:
-        #fafcff;
+    background: #fafcff;
 }
 
 .row input,
 .recipe-select {
-    width:
-        100%;
-
-    height:
-        44px;
-
-    border:
-        none;
-
-    border-right:
-        1px solid
-        var(--border);
-
-    padding:
-        7px 9px;
-
-    outline:
-        none;
-
-    font-size:
-        14px;
-
-    color:
-        var(--blue);
-
-    background:
-        transparent;
+    width: 100%;
+    height: 44px;
+    border: none;
+    border-right: 1px solid var(--border);
+    padding: 7px 9px;
+    outline: none;
+    font-size: 14px;
+    color: var(--blue);
+    background: transparent;
 }
 
 .row input:focus,
 .recipe-select:focus {
-    background:
-        var(--blue-light);
-
+    background: var(--blue-light);
     box-shadow:
         inset 0 0 0 2px
         #4d90fe;
 }
 
 .recipe-select {
-    cursor:
-        pointer;
+    cursor: pointer;
 }
 
 .row input.corr-input {
-    color:
-        var(--green);
-
-    font-weight:
-        850;
+    color: var(--green);
+    font-weight: 850;
 }
 
 .row input.retur-input {
-    color:
-        var(--orange);
-
-    font-weight:
-        850;
+    color: var(--orange);
+    font-weight: 850;
 }
 
 .row input.note-input {
-    color:
-        var(--blue);
+    color: var(--blue);
 }
 
 .delete-row {
-    width:
-        100%;
-
-    height:
-        44px;
-
-    border:
-        none;
-
-    background:
-        #fff1f0;
-
-    color:
-        var(--red);
-
-    cursor:
-        pointer;
-
-    font-size:
-        17px;
-
-    font-weight:
-        850;
+    width: 100%;
+    height: 44px;
+    border: none;
+    background: #fff1f0;
+    color: var(--red);
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 850;
 }
 
 .delete-row:hover {
-    background:
-        var(--red);
-
-    color:
-        white;
+    background: var(--red);
+    color: white;
 }
 
 
@@ -948,30 +638,16 @@ select {
 ========================================= */
 
 .total-row {
-    background:
-        #f1f4f8;
-
-    border-top:
-        3px solid
-        var(--blue);
-
-    font-weight:
-        850;
+    background: #f1f4f8;
+    border-top: 3px solid var(--blue);
+    font-weight: 850;
 }
 
 .total-row > div {
-    padding:
-        10px 6px;
-
-    text-align:
-        center;
-
-    font-size:
-        13px;
-
-    border-right:
-        1px solid
-        #d9dfe7;
+    padding: 10px 6px;
+    text-align: center;
+    font-size: 13px;
+    border-right: 1px solid #d9dfe7;
 }
 
 
@@ -980,93 +656,52 @@ select {
 ========================================= */
 
 .total-m3-box {
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    gap:
-        18px;
-
-    min-height:
-        58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    min-height: 58px;
 }
 
 .total-part,
 .blandat-part {
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .total-label,
 .blandat-label {
-    color:
-        var(--blue);
-
-    font-weight:
-        850;
-
-    font-size:
-        11px;
+    color: var(--blue);
+    font-weight: 850;
+    font-size: 11px;
 }
 
 .total-value {
-    color:
-        #222;
-
-    font-size:
-        17px;
+    color: #222;
+    font-size: 17px;
 }
 
 .blandat-value {
-    color:
-        var(--green);
-
-    font-size:
-        17px;
+    color: var(--green);
+    font-size: 17px;
 }
 
-
-/* =========================================
-   TOTAL CORR
-========================================= */
-
 .total-corr {
-    color:
-        var(--green);
+    color: var(--green);
 }
 
 .total-corr.positive {
-    color:
-        var(--red);
+    color: var(--red);
 }
 
 .total-corr.negative {
-    color:
-        var(--green);
+    color: var(--green);
 }
 
-
-/* =========================================
-   TOTAL RETUR
-========================================= */
-
 .total-retur {
-    color:
-        var(--orange);
+    color: var(--orange);
 }
 
 
@@ -1075,57 +710,33 @@ select {
 ========================================= */
 
 .add-row-area {
-    display:
-        flex;
-
-    justify-content:
-        flex-end;
-
-    margin-top:
-        13px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 13px;
 }
 
 .add-row-button {
-    border:
-        none;
-
+    border: none;
     background:
         linear-gradient(
             135deg,
             #1b4395,
             #143275
         );
-
-    color:
-        white;
-
-    border-radius:
-        11px;
-
-    padding:
-        11px 16px;
-
-    font-size:
-        13px;
-
-    font-weight:
-        850;
-
-    cursor:
-        pointer;
-
+    color: white;
+    border-radius: 11px;
+    padding: 11px 16px;
+    font-size: 13px;
+    font-weight: 850;
+    cursor: pointer;
     box-shadow:
         0 5px 15px
         rgba(20,50,117,.15);
-
-    transition:
-        .15s ease;
+    transition: .15s ease;
 }
 
 .add-row-button:hover {
-    transform:
-        translateY(-2px);
-
+    transform: translateY(-2px);
     box-shadow:
         0 8px 20px
         rgba(20,50,117,.22);
@@ -1137,31 +748,17 @@ select {
 ========================================= */
 
 .saved {
-    text-align:
-        center;
-
-    margin-top:
-        10px;
-
-    color:
-        var(--green);
-
-    font-size:
-        12px;
-
-    font-weight:
-        700;
-
-    opacity:
-        0;
-
-    transition:
-        opacity .3s;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity .3s;
 }
 
 .saved.show {
-    opacity:
-        1;
+    opacity: 1;
 }
 
 
@@ -1170,167 +767,84 @@ select {
 ========================================= */
 
 .panel {
-    background:
-        rgba(255,255,255,.94);
-
-    border:
-        1px solid
-        rgba(255,255,255,.9);
-
-    border-radius:
-        19px;
-
-    box-shadow:
-        var(--shadow-large);
-
-    padding:
-        20px;
+    background: rgba(255,255,255,.94);
+    border: 1px solid rgba(255,255,255,.9);
+    border-radius: 19px;
+    box-shadow: var(--shadow-large);
+    padding: 20px;
 }
 
 .panel-header {
-    display:
-        flex;
-
-    justify-content:
-        space-between;
-
-    align-items:
-        center;
-
-    gap:
-        10px;
-
-    margin-bottom:
-        17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 17px;
 }
 
 .panel-title {
-    color:
-        var(--blue);
-
-    font-size:
-        20px;
-
-    font-weight:
-        850;
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 850;
 }
 
 .panel-subtitle {
-    color:
-        var(--muted);
-
-    font-size:
-        12px;
-
-    margin-top:
-        3px;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 3px;
 }
 
 .recipe-list {
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    gap:
-        9px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 .recipe-row {
-    display:
-        grid;
-
-    grid-template-columns:
-        1.5fr 1fr 55px;
-
-    gap:
-        8px;
-
-    background:
-        #f8fafc;
-
-    border:
-        1px solid
-        var(--border);
-
-    border-radius:
-        12px;
-
-    padding:
-        7px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 55px;
+    gap: 8px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 7px;
 }
 
 .recipe-row input {
-    border:
-        1px solid
-        var(--border);
-
-    border-radius:
-        9px;
-
-    padding:
-        9px 10px;
-
-    outline:
-        none;
-
-    color:
-        var(--blue);
-
-    background:
-        white;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 9px 10px;
+    outline: none;
+    color: var(--blue);
+    background: white;
 }
 
 .recipe-row input:focus {
-    border-color:
-        #4d90fe;
-
+    border-color: #4d90fe;
     box-shadow:
         0 0 0 3px
         rgba(77,144,254,.12);
 }
 
 .recipe-delete {
-    border:
-        none;
-
-    border-radius:
-        9px;
-
-    background:
-        var(--red-light);
-
-    color:
-        var(--red);
-
-    cursor:
-        pointer;
-
-    font-weight:
-        850;
-
-    font-size:
-        17px;
+    border: none;
+    border-radius: 9px;
+    background: var(--red-light);
+    color: var(--red);
+    cursor: pointer;
+    font-weight: 850;
+    font-size: 17px;
 }
 
 .recipe-delete:hover {
-    background:
-        var(--red);
-
-    color:
-        white;
+    background: var(--red);
+    color: white;
 }
 
 .recipe-add-area {
-    display:
-        flex;
-
-    justify-content:
-        flex-end;
-
-    margin-top:
-        13px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 13px;
 }
 
 
@@ -1341,81 +855,68 @@ select {
 @media (max-width: 800px) {
 
     .container {
-        padding:
-            10px;
+        padding: 10px;
+    }
+
+    .sheet-tabs {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sheet-tab {
+        flex: 1;
+        min-width: 0;
+        padding: 10px 8px;
     }
 
     .topbar {
-        flex-direction:
-            column;
-
-        align-items:
-            stretch;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .customer-name {
-        width:
-            100%;
-
-        text-align:
-            center;
-
-        font-size:
-            30px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
     }
 
     .top-actions {
-        justify-content:
-            center;
+        justify-content: center;
     }
 
     .month-totals {
-        grid-template-columns:
-            1fr;
+        grid-template-columns: 1fr;
     }
 
     .calendar {
-        width:
-            100%;
+        width: 100%;
     }
 
     .calendar-day {
-        min-height:
-            58px;
-
-        padding:
-            5px;
+        min-height: 58px;
+        padding: 5px;
     }
 
     .day-number {
-        font-size:
-            13px;
+        font-size: 13px;
     }
 
     .day-status {
-        font-size:
-            8px;
+        font-size: 8px;
     }
 
     .month-title {
-        min-width:
-            130px;
-
-        font-size:
-            18px;
+        min-width: 130px;
+        font-size: 18px;
     }
 
     .nav-button {
-        padding:
-            8px 10px;
-
-        font-size:
-            11px;
+        padding: 8px 10px;
+        font-size: 11px;
     }
 
     .recipe-row {
-        grid-template-columns:
-            1fr 1fr 45px;
+        grid-template-columns: 1fr 1fr 45px;
     }
 }
 </style>
@@ -1424,6 +925,50 @@ select {
 <body>
 
 <div class="container">
+
+    <!-- =====================================
+         BLAD 1-5
+    ====================================== -->
+
+    <div class="sheet-tabs">
+
+        <button
+            class="sheet-tab active"
+            id="sheetButton1"
+            onclick="switchSheet(1)">
+            1
+        </button>
+
+        <button
+            class="sheet-tab"
+            id="sheetButton2"
+            onclick="switchSheet(2)">
+            2
+        </button>
+
+        <button
+            class="sheet-tab"
+            id="sheetButton3"
+            onclick="switchSheet(3)">
+            3
+        </button>
+
+        <button
+            class="sheet-tab"
+            id="sheetButton4"
+            onclick="switchSheet(4)">
+            4
+        </button>
+
+        <button
+            class="sheet-tab"
+            id="sheetButton5"
+            onclick="switchSheet(5)">
+            5
+        </button>
+
+    </div>
+
 
     <!-- =====================================
          TOPP
@@ -1442,19 +987,15 @@ select {
         <div class="top-actions">
 
             <button
-                class="btn btn-green"
-                onclick="exportToExcel()">
-
-                📊 Excel
-
+                class="btn btn-orange"
+                onclick="exportDayToPDF()">
+                📄 PDF Dag
             </button>
 
             <button
                 class="btn btn-orange"
-                onclick="exportDayToPDF()">
-
-                📄 PDF
-
+                onclick="exportCustomerPDF()">
+                📄 PDF Kund
             </button>
 
         </div>
@@ -1495,11 +1036,7 @@ select {
 
     <section id="bohusTab">
 
-        <!-- MÅNAD TOTALER -->
-
         <div class="month-totals">
-
-            <!-- TOTAL M3 -->
 
             <div class="month-total-box month-total-cost">
 
@@ -1512,15 +1049,11 @@ select {
                 <small
                     class="cost-small"
                     id="monthTotalCost">
-
                     0 kr
-
                 </small>
 
             </div>
 
-
-            <!-- TOTAL CORR -->
 
             <div
                 class="month-total-box month-total-corr"
@@ -1535,15 +1068,11 @@ select {
                 <small
                     class="cost-small"
                     id="monthCorrCost">
-
                     0 kr
-
                 </small>
 
             </div>
 
-
-            <!-- TOTAL RETUR -->
 
             <div class="month-total-box month-total-retur">
 
@@ -1556,9 +1085,7 @@ select {
                 <small
                     class="cost-small"
                     id="monthReturCost">
-
                     0 kr
-
                 </small>
 
             </div>
@@ -1566,16 +1093,12 @@ select {
         </div>
 
 
-        <!-- MÅNAD -->
-
         <div class="calendar-navigation">
 
             <button
                 class="nav-button"
                 onclick="previousMonth()">
-
                 ← Föregående
-
             </button>
 
             <div
@@ -1586,20 +1109,15 @@ select {
             <button
                 class="nav-button"
                 onclick="nextMonth()">
-
                 Nästa →
-
             </button>
 
         </div>
 
 
-        <!-- KALENDER -->
-
         <div class="calendar">
 
             <div class="weekdays">
-
                 <div>Mån</div>
                 <div>Tis</div>
                 <div>Ons</div>
@@ -1607,7 +1125,6 @@ select {
                 <div>Fre</div>
                 <div>Lör</div>
                 <div>Sön</div>
-
             </div>
 
             <div
@@ -1618,15 +1135,11 @@ select {
         </div>
 
 
-        <!-- DATUM -->
-
         <div
             class="date"
             id="currentDate">
         </div>
 
-
-        <!-- TABELL -->
 
         <div class="table-wrapper">
 
@@ -1634,37 +1147,18 @@ select {
 
                 <div class="header">
 
-                    <div>
-                        Recept
-                    </div>
-
-                    <div>
-                        M3
-                    </div>
-
-                    <div>
-                        Corr
-                    </div>
-
-                    <div>
-                        Retur
-                    </div>
-
-                    <div>
-                        Anteckning
-                    </div>
-
-                    <div>
-                        -
-                    </div>
+                    <div>Recept</div>
+                    <div>M3</div>
+                    <div>Corr</div>
+                    <div>Retur</div>
+                    <div>Anteckning</div>
+                    <div>-</div>
 
                 </div>
 
 
                 <div id="rows"></div>
 
-
-                <!-- TOTAL -->
 
                 <div class="total-row">
 
@@ -1681,9 +1175,7 @@ select {
                             <div
                                 class="total-value"
                                 id="totalM3">
-
                                 0
-
                             </div>
 
                         </div>
@@ -1698,9 +1190,7 @@ select {
                             <div
                                 class="blandat-value"
                                 id="totalBlandat">
-
                                 0
-
                             </div>
 
                         </div>
@@ -1717,9 +1207,7 @@ select {
                         <small
                             class="cost-small"
                             id="totalCorrCost">
-
                             0 kr
-
                         </small>
 
                     </div>
@@ -1734,9 +1222,7 @@ select {
                         <small
                             class="cost-small"
                             id="totalReturCost">
-
                             0 kr
-
                         </small>
 
                     </div>
@@ -1755,16 +1241,12 @@ select {
         </div>
 
 
-        <!-- LÄGG TILL RAD -->
-
         <div class="add-row-area">
 
             <button
                 class="add-row-button"
                 onclick="addRow()">
-
                 ＋ Lägg till rad
-
             </button>
 
         </div>
@@ -1773,9 +1255,7 @@ select {
         <div
             class="saved"
             id="savedMessage">
-
             ✓ Sparat
-
         </div>
 
     </section>
@@ -1819,9 +1299,7 @@ select {
                 <button
                     class="add-row-button"
                     onclick="addRecipe()">
-
                     ＋ Lägg till recept
-
                 </button>
 
             </div>
@@ -1845,9 +1323,7 @@ const startDate =
 const endDate =
     new Date(2027, 11, 31);
 
-
 const monthNames = [
-
     "Januari",
     "Februari",
     "Mars",
@@ -1860,13 +1336,145 @@ const monthNames = [
     "Oktober",
     "November",
     "December"
-
 ];
 
 
-let currentMonth;
+/*
+ * Aktivt blad.
+ *
+ * Alla localStorage-nycklar får
+ * automatiskt ett prefix med bladnumret.
+ *
+ * Exempel:
+ *
+ * blad1_dagbok_2026-10-02_m3_0
+ * blad2_dagbok_2026-10-02_m3_0
+ *
+ * Därför är bladen helt separerade.
+ */
 
+let activeSheet = 1;
+
+let currentMonth;
 let currentDate;
+
+
+/* =========================================
+   BLAD
+========================================= */
+
+function storagePrefix() {
+
+    return "blad" + activeSheet + "_";
+
+}
+
+
+function switchSheet(sheetNumber) {
+
+    activeSheet =
+        Number(sheetNumber);
+
+    for (
+        let i = 1;
+        i <= 5;
+        i++
+    ) {
+
+        const button =
+            document.getElementById(
+                "sheetButton" + i
+            );
+
+        if (i === activeSheet) {
+
+            button.classList.add(
+                "active"
+            );
+
+        } else {
+
+            button.classList.remove(
+                "active"
+            );
+
+        }
+
+    }
+
+
+    /*
+     * Ladda månaden för det nya bladet.
+     */
+
+    if (!loadSavedMonth()) {
+
+        currentMonth =
+            new Date(
+                startDate.getFullYear(),
+                startDate.getMonth(),
+                1
+            );
+
+    }
+
+
+    /*
+     * Ladda datum för det nya bladet.
+     */
+
+    if (!loadSavedDate()) {
+
+        currentDate =
+            new Date(startDate);
+
+    }
+
+
+    /*
+     * Ladda kundnamn för det nya bladet.
+     */
+
+    const savedCustomer =
+        localStorage.getItem(
+            storagePrefix() +
+            "kundnamn"
+        );
+
+
+    document.getElementById(
+        "customerName"
+    ).value =
+        savedCustomer || "Bohus";
+
+
+    /*
+     * Visa alltid Dagbok när
+     * man byter huvudblad.
+     */
+
+    showTab("bohus");
+
+    renderCalendar();
+
+
+    document.getElementById(
+        "currentDate"
+    ).textContent =
+        formatDate(
+            currentDate
+        );
+
+
+    createRows();
+
+    calculateTotals();
+
+    calculateMonthTotals();
+
+    renderRecipes();
+
+}
 
 
 /* =========================================
@@ -1877,12 +1485,15 @@ function saveCustomerName() {
 
     const name =
         document
-            .getElementById("customerName")
+            .getElementById(
+                "customerName"
+            )
             .value
             .trim();
 
 
     localStorage.setItem(
+        storagePrefix() +
         "kundnamn",
         name || "Bohus"
     );
@@ -1901,18 +1512,15 @@ function showTab(tab) {
             "bohusTab"
         );
 
-
     const recipes =
         document.getElementById(
             "recipesTab"
         );
 
-
     const tabBohus =
         document.getElementById(
             "tabBohus"
         );
-
 
     const tabRecipes =
         document.getElementById(
@@ -2080,6 +1688,7 @@ function getRecipes() {
 
         return JSON.parse(
             localStorage.getItem(
+                storagePrefix() +
                 "bohus_recept"
             )
         ) || [];
@@ -2096,6 +1705,7 @@ function getRecipes() {
 function saveRecipes(recipes) {
 
     localStorage.setItem(
+        storagePrefix() +
         "bohus_recept",
         JSON.stringify(recipes)
     );
@@ -2698,7 +2308,8 @@ function getDateTotals(date) {
         totalCorr +=
             parseNumber(
                 localStorage.getItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_corr_"
                     + row
@@ -2709,7 +2320,8 @@ function getDateTotals(date) {
         totalRetur +=
             parseNumber(
                 localStorage.getItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_retur_"
                     + row
@@ -2740,7 +2352,8 @@ function getRowCount(dateKey) {
 
     const saved =
         localStorage.getItem(
-            "dagbok_"
+            storagePrefix()
+            + "dagbok_"
             + dateKey
             + "_rowCount"
         );
@@ -2778,7 +2391,8 @@ function getRowCount(dateKey) {
 function saveRowCount() {
 
     localStorage.setItem(
-        "dagbok_"
+        storagePrefix()
+        + "dagbok_"
         + getDateKey(currentDate)
         + "_rowCount",
 
@@ -2801,6 +2415,7 @@ function selectDate(date) {
 
 
     localStorage.setItem(
+        storagePrefix() +
         "senastValdaDatum",
         getDateKey(
             currentDate
@@ -2915,6 +2530,7 @@ function nextMonth() {
 function saveCurrentMonth() {
 
     localStorage.setItem(
+        storagePrefix() +
         "senastVisadeManad",
 
         currentMonth.getFullYear()
@@ -2937,6 +2553,7 @@ function loadSavedMonth() {
 
     const saved =
         localStorage.getItem(
+            storagePrefix() +
             "senastVisadeManad"
         );
 
@@ -2996,6 +2613,7 @@ function loadSavedDate() {
 
     const saved =
         localStorage.getItem(
+            storagePrefix() +
             "senastValdaDatum"
         );
 
@@ -3112,14 +2730,10 @@ function createRow(
         "row";
 
 
-    const recipe =
+    rowElement.appendChild(
         createRecipeSelect(
             row
-        );
-
-
-    rowElement.appendChild(
-        recipe
+        )
     );
 
 
@@ -3219,7 +2833,8 @@ function createRecipeSelect(row) {
 
 
     const key =
-        "dagbok_"
+        storagePrefix()
+        + "dagbok_"
         + dateKey
         + "_recipe_"
         + row;
@@ -3349,6 +2964,8 @@ function createInput(
 
 
     const key =
+        storagePrefix()
+        +
         "dagbok_"
         +
         getDateKey(
@@ -3477,13 +3094,11 @@ function deleteRow(
 
 
     const types = [
-
         "recipe",
         "m3",
         "corr",
         "retur",
         "note"
-
     ];
 
 
@@ -3491,7 +3106,8 @@ function deleteRow(
         function(type) {
 
             localStorage.removeItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_"
                 + type
@@ -3573,7 +3189,8 @@ function deleteRow(
             function(type) {
 
                 localStorage.removeItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_"
                     + type
@@ -3591,7 +3208,8 @@ function deleteRow(
         function(item, index) {
 
             localStorage.setItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_recipe_"
                 + index,
@@ -3600,7 +3218,8 @@ function deleteRow(
 
 
             localStorage.setItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_m3_"
                 + index,
@@ -3609,7 +3228,8 @@ function deleteRow(
 
 
             localStorage.setItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_corr_"
                 + index,
@@ -3618,7 +3238,8 @@ function deleteRow(
 
 
             localStorage.setItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_retur_"
                 + index,
@@ -3627,7 +3248,8 @@ function deleteRow(
 
 
             localStorage.setItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_note_"
                 + index,
@@ -3639,7 +3261,8 @@ function deleteRow(
 
 
     localStorage.setItem(
-        "dagbok_"
+        storagePrefix()
+        + "dagbok_"
         + dateKey
         + "_rowCount",
         data.length
@@ -3693,7 +3316,8 @@ function calculateTotals() {
         const m3 =
             parseNumber(
                 localStorage.getItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_m3_"
                     + row
@@ -3704,7 +3328,8 @@ function calculateTotals() {
         const corr =
             parseNumber(
                 localStorage.getItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_corr_"
                     + row
@@ -3715,7 +3340,8 @@ function calculateTotals() {
         const retur =
             parseNumber(
                 localStorage.getItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_retur_"
                     + row
@@ -3845,7 +3471,8 @@ function totalCorrCost(dateKey) {
         const corr =
             parseNumber(
                 localStorage.getItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_corr_"
                     + row
@@ -3855,7 +3482,8 @@ function totalCorrCost(dateKey) {
 
         const recipe =
             localStorage.getItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_recipe_"
                 + row
@@ -3902,7 +3530,8 @@ function totalReturCost(dateKey) {
         const retur =
             parseNumber(
                 localStorage.getItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_retur_"
                     + row
@@ -3912,7 +3541,8 @@ function totalReturCost(dateKey) {
 
         const recipe =
             localStorage.getItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_recipe_"
                 + row
@@ -4015,7 +3645,8 @@ function calculateMonthTotals() {
             const m3 =
                 parseNumber(
                     localStorage.getItem(
-                        "dagbok_"
+                        storagePrefix()
+                        + "dagbok_"
                         + dateKey
                         + "_m3_"
                         + row
@@ -4026,7 +3657,8 @@ function calculateMonthTotals() {
             const corr =
                 parseNumber(
                     localStorage.getItem(
-                        "dagbok_"
+                        storagePrefix()
+                        + "dagbok_"
                         + dateKey
                         + "_corr_"
                         + row
@@ -4037,7 +3669,8 @@ function calculateMonthTotals() {
             const retur =
                 parseNumber(
                     localStorage.getItem(
-                        "dagbok_"
+                        storagePrefix()
+                        + "dagbok_"
                         + dateKey
                         + "_retur_"
                         + row
@@ -4047,7 +3680,8 @@ function calculateMonthTotals() {
 
             const recipe =
                 localStorage.getItem(
-                    "dagbok_"
+                    storagePrefix()
+                    + "dagbok_"
                     + dateKey
                     + "_recipe_"
                     + row
@@ -4062,64 +3696,17 @@ function calculateMonthTotals() {
                 );
 
 
-            /*
-             * TOTAL M3
-             */
+            totalM3 += m3;
 
-            totalM3 +=
-                m3;
+            totalCorr += corr;
 
-
-            /*
-             * TOTAL CORR
-             */
-
-            totalCorr +=
-                corr;
-
-
-            /*
-             * TOTAL RETUR
-             */
-
-            totalRetur +=
-                retur;
-
-
-            /*
-             * KOSTNAD FÖR M3
-             *
-             * Exempel:
-             *
-             * 7 M3 × 1000 kr
-             * = 7000 kr
-             */
+            totalRetur += retur;
 
             totalCost +=
                 m3 * cost;
 
-
-            /*
-             * KOSTNAD CORR
-             *
-             * Exempel:
-             *
-             * -4 × 1000 kr
-             * = -4000 kr
-             */
-
             totalCorrCostValue +=
                 corr * cost;
-
-
-            /*
-             * KOSTNAD RETUR
-             *
-             * Exempel:
-             *
-             * 3,55 × 1000 kr
-             * = 3550 kr
-             */
 
             totalReturCostValue +=
                 retur * cost;
@@ -4129,10 +3716,6 @@ function calculateMonthTotals() {
     }
 
 
-    /* =====================================
-       TOTAL M3
-    ====================================== */
-
     document.getElementById(
         "monthTotalM3"
     ).textContent =
@@ -4140,10 +3723,6 @@ function calculateMonthTotals() {
             totalM3
         );
 
-
-    /* =====================================
-       TOTAL M3 KOSTNAD
-    ====================================== */
 
     document.getElementById(
         "monthTotalCost"
@@ -4154,10 +3733,6 @@ function calculateMonthTotals() {
         +
         " kr";
 
-
-    /* =====================================
-       TOTAL CORR
-    ====================================== */
 
     const corrElement =
         document.getElementById(
@@ -4209,10 +3784,6 @@ function calculateMonthTotals() {
         +
         " kr";
 
-
-    /* =====================================
-       TOTAL RETUR
-    ====================================== */
 
     document.getElementById(
         "monthTotalRetur"
@@ -4303,407 +3874,16 @@ function escapeHtml(value) {
 
 
 /* =========================================
-   EXCEL
-========================================= */
-
-function exportToExcel() {
-
-    let html = `
-<html>
-
-<head>
-
-<meta charset="UTF-8">
-
-<style>
-
-table {
-    border-collapse:
-        collapse;
-
-    font-family:
-        Arial;
-}
-
-th {
-    background:
-        #143275;
-
-    color:
-        white;
-
-    font-weight:
-        bold;
-}
-
-th,
-td {
-    border:
-        1px solid #999;
-
-    padding:
-        7px;
-
-    text-align:
-        center;
-}
-
-.total {
-    background:
-        #e8edf3;
-
-    font-weight:
-        bold;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<h1>
-${escapeHtml(
-    document.getElementById(
-        "customerName"
-    ).value
-)}
-</h1>
-`;
-
-
-    let month =
-        new Date(
-            startDate.getFullYear(),
-            startDate.getMonth(),
-            1
-        );
-
-
-    const lastMonth =
-        new Date(
-            endDate.getFullYear(),
-            endDate.getMonth(),
-            1
-        );
-
-
-    while (
-        month <= lastMonth
-    ) {
-
-        html +=
-            "<h2>"
-            +
-            monthNames[
-                month.getMonth()
-            ]
-            +
-            " "
-            +
-            month.getFullYear()
-            +
-            "</h2>";
-
-
-        const days =
-            new Date(
-                month.getFullYear(),
-                month.getMonth() + 1,
-                0
-            ).getDate();
-
-
-        for (
-            let day = 1;
-            day <= days;
-            day++
-        ) {
-
-            const date =
-                new Date(
-                    month.getFullYear(),
-                    month.getMonth(),
-                    day
-                );
-
-
-            if (
-                date < startDate ||
-                date > endDate
-            ) {
-
-                continue;
-
-            }
-
-
-            const dateKey =
-                getDateKey(
-                    date
-                );
-
-
-            const rows =
-                getRowCount(
-                    dateKey
-                );
-
-
-            html +=
-                "<h3>"
-                +
-                escapeHtml(
-                    formatDate(date)
-                )
-                +
-                "</h3>"
-                +
-                "<table>"
-                +
-                "<tr>"
-                +
-                "<th>Recept</th>"
-                +
-                "<th>M3</th>"
-                +
-                "<th>Corr</th>"
-                +
-                "<th>Retur</th>"
-                +
-                "<th>Anteckning</th>"
-                +
-                "</tr>";
-
-
-            let totalM3 = 0;
-
-            let totalCorr = 0;
-
-            let totalRetur = 0;
-
-
-            for (
-                let row = 0;
-                row < rows;
-                row++
-            ) {
-
-                const recipe =
-                    localStorage.getItem(
-                        "dagbok_"
-                        + dateKey
-                        + "_recipe_"
-                        + row
-                    )
-                    ||
-                    "";
-
-
-                const m3 =
-                    localStorage.getItem(
-                        "dagbok_"
-                        + dateKey
-                        + "_m3_"
-                        + row
-                    )
-                    ||
-                    "";
-
-
-                const corr =
-                    localStorage.getItem(
-                        "dagbok_"
-                        + dateKey
-                        + "_corr_"
-                        + row
-                    )
-                    ||
-                    "";
-
-
-                const retur =
-                    localStorage.getItem(
-                        "dagbok_"
-                        + dateKey
-                        + "_retur_"
-                        + row
-                    )
-                    ||
-                    "";
-
-
-                const note =
-                    localStorage.getItem(
-                        "dagbok_"
-                        + dateKey
-                        + "_note_"
-                        + row
-                    )
-                    ||
-                    "";
-
-
-                totalM3 +=
-                    parseNumber(m3);
-
-
-                totalCorr +=
-                    parseNumber(corr);
-
-
-                totalRetur +=
-                    parseNumber(retur);
-
-
-                html +=
-                    "<tr>"
-                    +
-                    "<td>"
-                    +
-                    escapeHtml(recipe)
-                    +
-                    "</td>"
-                    +
-                    "<td>"
-                    +
-                    escapeHtml(m3)
-                    +
-                    "</td>"
-                    +
-                    "<td>"
-                    +
-                    escapeHtml(corr)
-                    +
-                    "</td>"
-                    +
-                    "<td>"
-                    +
-                    escapeHtml(retur)
-                    +
-                    "</td>"
-                    +
-                    "<td>"
-                    +
-                    escapeHtml(note)
-                    +
-                    "</td>"
-                    +
-                    "</tr>";
-
-            }
-
-
-            html +=
-                '<tr class="total">'
-                +
-                "<td>"
-                +
-                "TOTAL / BLANDAT: "
-                +
-                formatNumber(totalM3)
-                +
-                " / "
-                +
-                formatNumber(
-                    totalM3 + totalCorr
-                )
-                +
-                "</td>"
-                +
-                "<td>"
-                +
-                formatNumber(totalM3)
-                +
-                "</td>"
-                +
-                "<td>"
-                +
-                formatNumber(totalCorr)
-                +
-                "</td>"
-                +
-                "<td>"
-                +
-                formatNumber(totalRetur)
-                +
-                "</td>"
-                +
-                "<td>-</td>"
-                +
-                "</tr>"
-                +
-                "</table><br>";
-
-        }
-
-
-        month =
-            new Date(
-                month.getFullYear(),
-                month.getMonth() + 1,
-                1
-            );
-
-    }
-
-
-    html +=
-        "</body></html>";
-
-
-    const blob =
-        new Blob(
-            [html],
-            {
-                type:
-                    "application/vnd.ms-excel"
-            }
-        );
-
-
-    const url =
-        URL.createObjectURL(
-            blob
-        );
-
-
-    const link =
-        document.createElement(
-            "a"
-        );
-
-
-    link.href =
-        url;
-
-
-    link.download =
-        "Dagbok_hela_perioden.xls";
-
-
-    document.body.appendChild(
-        link
-    );
-
-
-    link.click();
-
-
-    document.body.removeChild(
-        link
-    );
-
-
-    URL.revokeObjectURL(
-        url
-    );
-
-}
-
-
-/* =========================================
-   PDF - VALD DAG
+   PDF DAG
+ *
+ * PDF Dag innehåller:
+ * Recept
+ * M3
+ * Corr
+ * Retur
+ * Anteckning
+ * Totaler
+ * Kostnader
 ========================================= */
 
 function exportDayToPDF() {
@@ -4744,7 +3924,8 @@ function exportDayToPDF() {
 
         const recipe =
             localStorage.getItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_recipe_"
                 + row
@@ -4755,7 +3936,8 @@ function exportDayToPDF() {
 
         const m3 =
             localStorage.getItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_m3_"
                 + row
@@ -4766,7 +3948,8 @@ function exportDayToPDF() {
 
         const corr =
             localStorage.getItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_corr_"
                 + row
@@ -4777,7 +3960,8 @@ function exportDayToPDF() {
 
         const retur =
             localStorage.getItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_retur_"
                 + row
@@ -4788,7 +3972,8 @@ function exportDayToPDF() {
 
         const note =
             localStorage.getItem(
-                "dagbok_"
+                storagePrefix()
+                + "dagbok_"
                 + dateKey
                 + "_note_"
                 + row
@@ -4842,6 +4027,396 @@ function exportDayToPDF() {
         tableRows +=
             `
             <tr>
+                <td>${escapeHtml(recipe)}</td>
+                <td>${escapeHtml(m3)}</td>
+                <td>${escapeHtml(corr)}</td>
+                <td>${escapeHtml(retur)}</td>
+                <td>${escapeHtml(note)}</td>
+            </tr>
+            `;
+
+    }
+
+
+    const printWindow =
+        window.open(
+            "",
+            "_blank"
+        );
+
+
+    if (!printWindow) {
+
+        alert(
+            "Tillåt popup-fönster för att skapa PDF."
+        );
+
+        return;
+
+    }
+
+
+    printWindow.document.write(`
+
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+PDF Dag
+</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    color: #26354a;
+    padding: 30px;
+}
+
+h1 {
+    color: #143275;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #718096;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #143275;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #d8dee7;
+    padding: 9px;
+}
+
+.total {
+    background: #eef2f6;
+    font-weight: bold;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.box {
+    border: 1px solid #dce2ea;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.label {
+    font-size: 11px;
+    color: #718096;
+    font-weight: bold;
+}
+
+.value {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.cost {
+    font-size: 12px;
+    color: #718096;
+    margin-top: 3px;
+}
+
+.m3 {
+    color: #143275;
+}
+
+.corr {
+    color: #16803c;
+}
+
+.retur {
+    color: #e67e22;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>
+${escapeHtml(
+    document.getElementById(
+        "customerName"
+    ).value
+)}
+</h1>
+
+<h2>
+${escapeHtml(
+    formatDate(
+        currentDate
+    )
+)}
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Recept</th>
+<th>M3</th>
+<th>Corr</th>
+<th>Retur</th>
+<th>Anteckning</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+${tableRows}
+
+<tr class="total">
+
+<td>
+TOTAL
+</td>
+
+<td>
+${formatNumber(totalM3)}
+</td>
+
+<td>
+${formatNumber(totalCorr)}
+</td>
+
+<td>
+${formatNumber(totalRetur)}
+</td>
+
+<td>
+BLANDAT:
+${formatNumber(
+    totalM3 + totalCorr
+)}
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<div class="summary">
+
+<div class="box">
+
+<div class="label">
+TOTAL M3
+</div>
+
+<div class="value m3">
+${formatNumber(totalM3)}
+</div>
+
+<div class="cost">
+${formatNumber(totalM3Cost)} kr
+</div>
+
+</div>
+
+
+<div class="box">
+
+<div class="label">
+TOTAL CORR
+</div>
+
+<div class="value corr">
+${formatNumber(totalCorr)}
+</div>
+
+<div class="cost">
+${formatNumber(totalCorrCostValue)} kr
+</div>
+
+</div>
+
+
+<div class="box">
+
+<div class="label">
+TOTAL RETUR
+</div>
+
+<div class="value retur">
+${formatNumber(totalRetur)}
+</div>
+
+<div class="cost">
+${formatNumber(totalReturCostValue)} kr
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+
+`);
+
+
+    printWindow.document.close();
+
+    printWindow.focus();
+
+
+    setTimeout(
+        function() {
+
+            printWindow.print();
+
+        },
+        400
+    );
+
+}
+
+
+/* =========================================
+   PDF KUND
+ *
+ * PDF Kund innehåller ENDAST:
+ *
+ * Recept
+ * M3
+ * Retur
+ *
+ * Ingen Corr
+ * Ingen Anteckning
+ * Ingen kostnad
+ *
+ * Sammanfattning:
+ * Total M3
+ * Total Retur
+========================================= */
+
+function exportCustomerPDF() {
+
+    const dateKey =
+        getDateKey(
+            currentDate
+        );
+
+
+    const rows =
+        getRowCount(
+            dateKey
+        );
+
+
+    let totalM3 = 0;
+
+    let totalRetur = 0;
+
+    let tableRows = "";
+
+
+    for (
+        let row = 0;
+        row < rows;
+        row++
+    ) {
+
+        const recipe =
+            localStorage.getItem(
+                storagePrefix()
+                + "dagbok_"
+                + dateKey
+                + "_recipe_"
+                + row
+            )
+            ||
+            "";
+
+
+        const m3 =
+            localStorage.getItem(
+                storagePrefix()
+                + "dagbok_"
+                + dateKey
+                + "_m3_"
+                + row
+            )
+            ||
+            "";
+
+
+        const retur =
+            localStorage.getItem(
+                storagePrefix()
+                + "dagbok_"
+                + dateKey
+                + "_retur_"
+                + row
+            )
+            ||
+            "";
+
+
+        const m3Value =
+            parseNumber(
+                m3
+            );
+
+
+        const returValue =
+            parseNumber(
+                retur
+            );
+
+
+        totalM3 +=
+            m3Value;
+
+
+        totalRetur +=
+            returValue;
+
+
+        /*
+         * PDF Kund:
+         * Endast recept, M3 och retur.
+         */
+
+        tableRows +=
+            `
+            <tr>
 
                 <td>
                     ${escapeHtml(recipe)}
@@ -4852,15 +4427,7 @@ function exportDayToPDF() {
                 </td>
 
                 <td>
-                    ${escapeHtml(corr)}
-                </td>
-
-                <td>
                     ${escapeHtml(retur)}
-                </td>
-
-                <td>
-                    ${escapeHtml(note)}
                 </td>
 
             </tr>
@@ -4898,11 +4465,7 @@ function exportDayToPDF() {
 <meta charset="UTF-8">
 
 <title>
-PDF - ${escapeHtml(
-    document.getElementById(
-        "customerName"
-    ).value
-)}
+PDF Kund
 </title>
 
 <style>
@@ -4976,7 +4539,7 @@ td {
         1px solid #d8dee7;
 
     padding:
-        9px;
+        10px;
 
 }
 
@@ -4996,13 +4559,13 @@ td {
         grid;
 
     grid-template-columns:
-        repeat(3,1fr);
+        repeat(2,1fr);
 
     gap:
-        12px;
+        15px;
 
     margin-top:
-        20px;
+        25px;
 
 }
 
@@ -5015,7 +4578,7 @@ td {
         10px;
 
     padding:
-        12px;
+        16px;
 
     text-align:
         center;
@@ -5028,7 +4591,7 @@ td {
 .label {
 
     font-size:
-        11px;
+        12px;
 
     color:
         #718096;
@@ -5041,42 +4604,28 @@ td {
 .value {
 
     font-size:
-        21px;
+        25px;
 
     font-weight:
         bold;
 
     margin-top:
-        4px;
-
-}
-
-.cost {
-
-    font-size:
-        12px;
-
-    color:
-        #718096;
-
-    margin-top:
-        3px;
+        5px;
 
 }
 
 .m3 {
+
     color:
         #143275;
-}
 
-.corr {
-    color:
-        #16803c;
 }
 
 .retur {
+
     color:
         #e67e22;
+
 }
 
 </style>
@@ -5121,20 +4670,13 @@ M3
 </th>
 
 <th>
-Corr
-</th>
-
-<th>
 Retur
-</th>
-
-<th>
-Anteckning
 </th>
 
 </tr>
 
 </thead>
+
 
 <tbody>
 
@@ -5152,18 +4694,7 @@ ${formatNumber(totalM3)}
 </td>
 
 <td>
-${formatNumber(totalCorr)}
-</td>
-
-<td>
 ${formatNumber(totalRetur)}
-</td>
-
-<td>
-BLANDAT:
-${formatNumber(
-    totalM3 + totalCorr
-)}
 </td>
 
 </tr>
@@ -5186,29 +4717,6 @@ TOTAL M3
 ${formatNumber(totalM3)}
 </div>
 
-<div class="cost">
-${formatNumber(totalM3Cost)}
-kr
-</div>
-
-</div>
-
-
-<div class="box">
-
-<div class="label">
-TOTAL CORR
-</div>
-
-<div class="value corr">
-${formatNumber(totalCorr)}
-</div>
-
-<div class="cost">
-${formatNumber(totalCorrCostValue)}
-kr
-</div>
-
 </div>
 
 
@@ -5220,11 +4728,6 @@ TOTAL RETUR
 
 <div class="value retur">
 ${formatNumber(totalRetur)}
-</div>
-
-<div class="cost">
-${formatNumber(totalReturCostValue)}
-kr
 </div>
 
 </div>
@@ -5240,7 +4743,6 @@ kr
 
 
     printWindow.document.close();
-
 
     printWindow.focus();
 
@@ -5261,8 +4763,31 @@ kr
    START
 ========================================= */
 
+if (!loadSavedMonth()) {
+
+    currentMonth =
+        new Date(
+            startDate.getFullYear(),
+            startDate.getMonth(),
+            1
+        );
+
+}
+
+
+if (!loadSavedDate()) {
+
+    currentDate =
+        new Date(
+            startDate
+        );
+
+}
+
+
 const savedCustomer =
     localStorage.getItem(
+        storagePrefix() +
         "kundnamn"
     );
 
@@ -5275,32 +4800,6 @@ if (
         "customerName"
     ).value =
         savedCustomer;
-
-}
-
-
-if (
-    !loadSavedMonth()
-) {
-
-    currentMonth =
-        new Date(
-            startDate.getFullYear(),
-            startDate.getMonth(),
-            1
-        );
-
-}
-
-
-if (
-    !loadSavedDate()
-) {
-
-    currentDate =
-        new Date(
-            startDate
-        );
 
 }
 
